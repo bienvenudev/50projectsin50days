@@ -1,55 +1,52 @@
-const nextBtn = document.querySelector('#next');
-const prevBtn = document.querySelector('#prev');
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
 const progressBar = document.querySelector('#progress');
 const circles = document.querySelectorAll('.circle');
 
-// let progWidth = 33;
-let activeNum = 1;
+let isActive = 1;
 
-nextBtn.addEventListener('click', function () {
-	activeNum++;
+next.addEventListener('click', function () {
+	isActive++;
 
-	if (activeNum > circles.length) {
-		activeNum = 4;
+	if (isActive > circles.length) {
+		isActive = circles.length;
 	}
-// console.log(activeNum);
-// 		prevBtn.disabled = false;
 
-		update();	
+	update();
 })
 
-prevBtn.addEventListener('click', function () {
-	activeNum--;
+prev.addEventListener('click', function () {
+	isActive--;
 
-	if (activeNum < 1) {
-		activeNum = 1;
+	if (isActive < 1) {
+		isActive = 1;
 	}
-// console.log(activeNum);
 
-update();	
+	update();
 })
 
 function update() {
+
 	circles.forEach((circle, idx) => {
-		if (idx < activeNum) {
+		if (idx < isActive) {
 			circle.classList.add('active');
-			
 		} else {
 			circle.classList.remove('active');
 		}
 	})
 
-	const actives = document.querySelectorAll('.active');
+	  // progress bar count
+		const actives = document.querySelectorAll('.active');
 
- 	progressBar.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%';
+		progressBar.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%';		
 
-	if (activeNum === 1) {
-		prevBtn.disabled = true;
-	} else if(activeNum === circles.length) {
-		nextBtn.disabled = true;
+	// disable/enable the buttons
+	if (isActive === 1) {
+		prev.disabled = true;
+	} else if (isActive === circles.length) {
+		next.disabled = true;
 	} else {
-		prevBtn.disabled = false;
-		nextBtn.disabled = false;
+		next.disabled = false;
+		prev.disabled = false;
 	}
-	console.log(activeNum, circles.length);
 }
