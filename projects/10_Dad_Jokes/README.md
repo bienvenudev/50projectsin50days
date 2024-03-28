@@ -13,7 +13,6 @@ This project builds a Dad Jokes Generator where users click a button to be prese
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -25,7 +24,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop](https://github.com/jwben1/50projectsin50days/assets/132217074/4f75b5bf-3c4f-486c-bcc9-7ffe2f02601d)
+![mobile](https://github.com/jwben1/50projectsin50days/assets/132217074/b6eaf459-9604-4947-a99a-48194b2b922e)
+
+
 
 ### Links
 
@@ -70,8 +72,8 @@ async function fetchJoke() {
 
 ### Continued development
 
-I'm still not comfortable with fetching APIs and different methods of doing it but I'm going to continue using these methods to achieve it.
-In this course I was also introduce to the getpostman, and I'll definitely check it out.
+I'm still not comfortable with fetching APIs and different methods of doing it, but I will continue using these methods to achieve it.
+In this course, I was also introduced to the Postman API platform, and I'll check it out.
 
 ### Useful resources
 
