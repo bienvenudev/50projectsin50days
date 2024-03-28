@@ -1,6 +1,6 @@
-# 50 projects in 50 days - Dad Jokes Generator solution
+# 50 projects in 50 days - Dad Jokes Generator
 
-This readme is heavily inspired by the frontend mentor readme template (https://www.frontendmentor.io/challenges/).
+This project builds a Dad Jokes Generator where users click a button to be presented with a pun.
 
 ## Table of contents
 
@@ -8,7 +8,6 @@ This readme is heavily inspired by the frontend mentor readme template (https://
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -22,90 +21,65 @@ This readme is heavily inspired by the frontend mentor readme template (https://
 
 Users should be able to:
 
-- View the optimal layout for the page depending on their device's screen size
-- See hover states for all interactive elements on the page
+- Generate a dad joke by clicking the Generate Joke button
 
 ### Screenshot
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+// not yet
 
-## My process
+- Live Site URL: [Live Site](https://your-live-site-url.com)
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5 markup
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- The Fetch API in JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project, I gained valuable insights into fetching APIs using different methods:
 
-To see how you can add code snippets, see below:
+#### Using `.then()`
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+I learned how to fetch APIs using the get method and handle asynchronous operations with `.then()`.
+
+Initially, I struggled to understand why we need to call `.then()` twice:
+
+```js
+fetch("https://icanhazdadjoke.com/", config)
+  .then((response) => response.json())
+  .then((data) => (jokeEl.innerText = data.joke));
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
+#### Using `async/await` for cleaner asychronous code:
+
+By labeling the function as async and using await inside it, The code becomes cleaner and easier to read compared to chaining multiple `.then()` calls.
+
+```js
+async function fetchJoke() {
+  const response = await fetch("https://icanhazdadjoke.com/", config);
+  const data = await response.json();
+  jokeEl.innerText = data.joke;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'm still not comfortable with fetching APIs and different methods of doing it but I'm going to continue using these methods to achieve it.
+In this course I was also introduce to the getpostman, and I'll definitely check it out.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - Fetch API in JavaScript documentation.
+- [Dad Jokes](https://icanhazdadjoke.com/api) - Dad joke APIs.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Linkedin - [Bienvenu Cyuzuzo](https://www.linkedin.com/in/bienvenu-cyuzuzo/)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+**Note: This readme is heavily inspired by the frontend mentor readme template (https://www.frontendmentor.io/challenges/).**
