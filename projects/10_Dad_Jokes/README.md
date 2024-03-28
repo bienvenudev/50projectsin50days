@@ -13,7 +13,6 @@ This project builds a Dad Jokes Generator where users click a button to be prese
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -70,8 +69,8 @@ async function fetchJoke() {
 
 ### Continued development
 
-I'm still not comfortable with fetching APIs and different methods of doing it but I'm going to continue using these methods to achieve it.
-In this course I was also introduce to the getpostman, and I'll definitely check it out.
+I'm still not comfortable with fetching APIs and different methods of doing it, but I will continue using these methods to achieve it.
+In this course, I was also introduced to the Postman API platform, and I'll check it out.
 
 ### Useful resources
 
