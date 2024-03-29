@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 4px;
+	font-size: 14px;
+	text-align: center;
+	color: rgb(94, 94, 94);
+}
+
+.key {
+background-color: rgb(219, 211, 200);
+padding: 15px 40px;
+text-align: center;
+border: 1px solid blanchedalmond;
+}
