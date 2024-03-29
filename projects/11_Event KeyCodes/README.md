@@ -48,8 +48,8 @@ I'll continue to learn more about conditional operators and their use.
 
 ### Useful resources
 
-- [Example 1](https://javascript.info/logical-operators) - Javascript ternary operator.
-- [Example 2](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event) - keydown event in Javascript.
+- [Javascript ternary operator.](https://javascript.info/logical-operators)
+- [keydown event in Javascript](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)
 
 ## Author
 
