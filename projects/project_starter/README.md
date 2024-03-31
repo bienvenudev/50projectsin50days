@@ -1,4 +1,4 @@
-# 50 projects in 50 days - ??
+# 50 projects in 50 days - Template
 
 ## Table of contents
 
@@ -19,7 +19,7 @@
 
 Users should be able to:
 
-- Generate a dad joke by clicking the Generate Joke button
+- View...
 
 ### Screenshot
 
@@ -38,7 +38,6 @@ Users should be able to:
 - HTML5 markup
 - Flexbox
 - Mobile-first workflow
-- The Fetch API in JavaScript
 
 ### What I learned
 
