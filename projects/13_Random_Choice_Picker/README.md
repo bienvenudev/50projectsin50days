@@ -61,7 +61,7 @@ I'd like to keep exploring how to use .filter() and .map() for more complex data
 
 ### Useful resources
 
-- [What is .trim() String Method](https://www.youtube.com/watch?v=akv8ejM9nTU) -
+- [What is .trim() String Method](https://www.youtube.com/watch?v=akv8ejM9nTU)
 - [Trim method on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
 
 ## Author
