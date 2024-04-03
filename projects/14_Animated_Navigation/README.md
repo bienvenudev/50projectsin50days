@@ -19,8 +19,7 @@
 The challenge was to create an Animated Navigation where users can click the open/close button to show/hide the menu smoothly.
 
 ### Screenshot
-
-![](./screenshot.jpg)
+[Demo](https://github.com/jwben1/50projectsin50days/assets/132217074/aae33365-6df9-48ba-9856-9041b5545110)
 
 ### Links
 
