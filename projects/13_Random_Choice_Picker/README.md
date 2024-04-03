@@ -26,8 +26,8 @@ For example, a user could enter 'Pizza, Movie, Book' as their choices, and the a
 
 ### Screenshot
 
-![desktop](./assets/desktop.webm)
-![mobile](./assets/mobile.webm)
+[mobile.webm](https://github.com/jwben1/50projectsin50days/assets/132217074/88842127-3012-4259-a538-6c33e95cd49c)
+[desktop.webm](https://github.com/jwben1/50projectsin50days/assets/132217074/33ae53e9-c2ab-4786-ab84-8e469401d850)
 
 ### Links
 
