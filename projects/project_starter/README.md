@@ -5,7 +5,6 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -24,12 +23,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
-
-### Links
-
-// not yet
-
-- Live Site URL: [Live Site](https://your-live-site-url.com)
 
 ## My process
 
