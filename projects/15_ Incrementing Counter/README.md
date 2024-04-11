@@ -34,7 +34,7 @@ This project animates follower counters on a webpage, smoothly incrementing from
 
 In this project, I learned how to leverage the data-target attribute to create dynamic and flexible animations.
 
-Additionally, I used an invisible <h1> element with the class sr-only for accessibility purposes. This element provides structure and improves accessibility for screen readers without affecting the visual design.
+Additionally, I used an invisible h1 element with the class sr-only(screen-reader only) for accessibility purposes. This element provides structure and improves accessibility for screen readers without affecting the visual design.
 
 ```html
 <div class="counter" data-target="12000"></div>
