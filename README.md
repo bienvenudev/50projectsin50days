@@ -2,6 +2,8 @@
 
 Welcome to my journey of the "50 projects in 50 days" challenge! 🚀
 
+[Find the project course here](https://50projects50days.com/)
+
 # Overview
 
 I'm taking on the exciting challenge of building 50 projects in 50 days. Although I haven't managed to complete a project daily, I'm committed to doing my best and learning as I progress.
@@ -18,6 +20,6 @@ I'll continue deploying projects as I advance through the challenge. You can che
 
 Check my progress and explore the projects hosted here:
 
-[Link to Combined Projects(Coming Soon)]()
+[All projects combined(coming soon)]()
 
 Feel free to follow along with my journey!
