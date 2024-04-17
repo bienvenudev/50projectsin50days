@@ -18,6 +18,6 @@ I'll continue deploying projects as I advance through the challenge. You can che
 
 Check my progress and explore the projects hosted here:
 
-[Link to Combined Projects]()
+[Link to Combined Projects(Coming Soon)]()
 
 Feel free to follow along with my journey!
