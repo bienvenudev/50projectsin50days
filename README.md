@@ -18,8 +18,8 @@ I'll continue deploying projects as I advance through the challenge. You can che
 
 # Check Out My Progress
 
-Check my progress and explore the projects hosted here:
+Explore the [projects hosted here](https://50-projects-in-50days.vercel.app/) and feel free to follow along with my journey:
 
-[All projects combined(coming soon)]()
 
-Feel free to follow along with my journey!
+**Made with ❤️ by Bienvenu**
+
