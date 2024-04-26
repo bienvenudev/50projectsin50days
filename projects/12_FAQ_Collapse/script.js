@@ -2,8 +2,9 @@ const buttons = document.querySelectorAll('.faq-toggle');
 
 buttons.forEach((button,idx) => {
 	button.addEventListener('click', () => {
+		
 		if (!button.parentNode.classList.contains('active')) {
-				turnOffPrevious();
+				// turnOffPrevious();
 
 				button.parentNode.classList.add('active');
 
@@ -14,11 +15,11 @@ buttons.forEach((button,idx) => {
 	})
 })
 
-function turnOffPrevious() {
-	const previousFaq = document.querySelector(".active");
+// function turnOffPrevious() {
+// 	const previousFaq = document.querySelector(".active");
 
-	if (previousFaq) {
-		previousFaq.classList.remove("active");
-	}
-}
+// 	if (previousFaq) {
+// 		previousFaq.classList.remove("active");
+// 	}
+// }
 
