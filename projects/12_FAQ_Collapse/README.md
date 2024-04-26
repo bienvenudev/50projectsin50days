@@ -5,7 +5,6 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -17,18 +16,12 @@
 
 ### The challenge
 
-This FAQ project allows users to view frequently asked questions in an accordion style, where only one question can be open at a time.
+This FAQ project allows users to view frequently asked questions in an accordion style, all questions can be opened at once.
 
 ### Screenshot
 
 ![Desktop](image.png)
 ![Mobile](image-3.png)
-
-### Links
-
-// not yet
-
-- Live Site URL: [Live Site](https://your-live-site-url.com)
 
 ## My process
 

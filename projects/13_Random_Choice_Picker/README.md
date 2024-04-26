@@ -5,7 +5,6 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -30,12 +29,6 @@ For example, a user could enter 'Pizza, Movie, Book' as their choices, and the a
 
 [desktop.webm](https://github.com/jwben1/50projectsin50days/assets/132217074/33ae53e9-c2ab-4786-ab84-8e469401d850)
 
-
-### Links
-
-// not yet
-
-- Live Site URL: [Live Site](https://your-live-site-url.com)
 
 ## My process
 

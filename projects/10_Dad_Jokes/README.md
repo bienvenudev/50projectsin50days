@@ -7,7 +7,6 @@ This project builds a Dad Jokes Generator where users click a button to be prese
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -26,14 +25,6 @@ Users should be able to:
 
 ![desktop](https://github.com/jwben1/50projectsin50days/assets/132217074/4f75b5bf-3c4f-486c-bcc9-7ffe2f02601d)
 ![mobile](https://github.com/jwben1/50projectsin50days/assets/132217074/b6eaf459-9604-4947-a99a-48194b2b922e)
-
-
-
-### Links
-
-// not yet
-
-- Live Site URL: [Live Site](https://your-live-site-url.com)
 
 ### Built with
 
@@ -77,8 +68,8 @@ In this course, I was also introduced to the Postman API platform, and I'll chec
 
 ### Useful resources
 
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - Fetch API in JavaScript documentation.
-- [Dad Jokes](https://icanhazdadjoke.com/api) - Dad joke APIs.
+- [Fetch API in JavaScript MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [Dad Jokes API](https://icanhazdadjoke.com/api) 
 
 ## Author
 

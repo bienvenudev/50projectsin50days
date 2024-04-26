@@ -4,7 +4,6 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -19,12 +18,6 @@
 Users should be able to:
 
 - Get the key and key code when they press any key on the keyboard.
-
-### Links
-
-// not yet
-
-- Live Site URL: [Live Site](https://your-live-site-url.com)
 
 ## My process
 
