@@ -6,7 +6,7 @@ Welcome to my journey of the "50 projects in 50 days" challenge! 🚀
 
 ## Table of contents
 
-  - [The challenge](#Overview)
+  - [Overview](#overview)
   - [Learning and Progress](#learning-and-progress)
   - [Future Plans](#future-plans)
   - [Check Out My Progress](#check-out-my-progress)
