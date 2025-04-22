@@ -51,8 +51,4 @@ Environment Variables: I'll delve deeper into using environment variables to sto
 - [Fetch API in JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [TMDB API](https://www.themoviedb.org/settings/api)
 
-## Author
-
-- Linkedin - [Bienvenu Cyuzuzo](https://www.linkedin.com/in/bienvenu-cyuzuzo/)
-
 **Note: This readme is heavily inspired by the frontend mentor readme template (https://www.frontendmentor.io/challenges/).**
