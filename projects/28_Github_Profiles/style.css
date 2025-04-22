@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2a2a72;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  width: 100%;
+  max-width: 700px;
+}
+
+input {
+  background-color: #4c2885;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+input::placeholder {
+  color: hsla(0, 0%, 100%, 0.767);
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.github-card {
+  background-color: #4c2885;
+  display: flex;
+  gap: 1.5rem;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.github-card img {
+  max-width: 130px;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+@media (max-width: 600px) {
+  .github-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#github-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.github-info {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.github-info span {
+  font-weight: bold;
+}
+
+.github-main-repos {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.github-main-repos span {
+  background-color: #2a2a72;
+  padding: 0.3rem;
+  font-size: 12px;
+}
+
+.github-info-wrapper {
+  max-width: 450px;
+}
