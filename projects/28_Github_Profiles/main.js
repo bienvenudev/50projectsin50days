@@ -21,10 +21,8 @@ const getContent = async (username) => {
   try {
     // Make API calls in parallel using Promise.all
     const [userResponse, reposResponse] = await Promise.all([
-      fetch(`${github_base}/users/${username.trim()}`, { headers }),
-      fetch(`${github_base}/users/${username.trim()}/repos?sort=created`, {
-        headers,
-      }),
+      fetch(`${github_base}/users/${username.trim()}`),
+      fetch(`${github_base}/users/${username.trim()}/repos?sort=created`),
     ]);
 
     if (userResponse.status === 404) {
