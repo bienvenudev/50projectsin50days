@@ -1,8 +1,5 @@
 const github_base = "https://api.github.com";
 
-// fetch
-
-// "/repos/{owner}/{repo}/issues"
 const form = document.getElementById("form");
 const main = document.getElementById("main");
 const searchInput = document.getElementById("search-input");
@@ -18,70 +15,62 @@ form.addEventListener("submit", (e) => {
 
   getContent(searchInputValue);
   document.getElementById("search-input").value = "";
-  // githubMainRepos.innerHTML = "";
 });
 
 const getContent = async (username) => {
   try {
-    const obj = await fetch(`${github_base}/users/${username.trim()}`, {
-      headers,
-    });
+    // Make API calls in parallel using Promise.all
+    const [userResponse, reposResponse] = await Promise.all([
+      fetch(`${github_base}/users/${username.trim()}`, { headers }),
+      fetch(`${github_base}/users/${username.trim()}/repos?sort=created`, {
+        headers,
+      }),
+    ]);
 
-    if (obj.status === 404) {
+    if (userResponse.status === 404) {
       return createErrorCard("No profile with this username!");
     }
 
-    const content = await obj.json();
+    const userData = await userResponse.json();
+    const reposData = await reposResponse.json();
 
-    contentCardHTML(content);
-    mainReposContent(username);
+    // Render everything at once
+    renderFullContent(userData, reposData);
   } catch (error) {
-    console.log(error);
+    console.error(error);
+    createErrorCard("Error fetching profile data");
   }
 };
 
-function contentCardHTML(content, mainRepos) {
+function renderFullContent(userData, reposData) {
+  const reposHTML = reposData
+    .slice(0, 5)
+    .map((repo) => {
+      return `<span><a href="${repo.html_url}">${repo.name}</a></span>`;
+    })
+    .join(" ");
   const cardHTML = `
   <div id="github-card" class="github-card">
         <div>
-        <img src='${content.avatar_url}'
+        <img src='${userData.avatar_url}'
           id="github-avatar"
-          alt="${content.name}"
+          alt="${userData.name}"
         />
         </div>
         <div class="github-info-wrapper">
-          <div id="github-name">${content.name}</div>
-          <p id="github-bio">${content.bio}</p>
+          <div id="github-name">${userData.name}</div>
+          <p id="github-bio">${userData.bio}</p>
           <div class="github-info">
-            <div id="github-followers">${content.followers} <span>Followers</span> </div>
-            <div id="github-following">${content.following} <span>Following</span> </div>
-            <div id="github-repos-count">${content.public_repos} <span>Repos</span></div>
+            <div id="github-followers">${userData.followers} <span>Followers</span> </div>
+            <div id="github-following">${userData.following} <span>Following</span> </div>
+            <div id="github-repos-count">${userData.public_repos} <span>Repos</span></div>
           </div>
-          <div class="github-main-repos"></div>
+          <div class="github-main-repos">${reposHTML}</div>
         </div>
       </div>
   `;
 
   main.innerHTML = cardHTML;
-}
-
-async function mainReposContent(user) {
-  try {
-    const allReposObj = await fetch(
-      `${github_base}/users/${user.trim()}/repos?sort=created`,
-      { headers }
-    ); // sort by what
-    const allRepos = await allReposObj.json(); // json;
-
-    allRepos.map((repo, i) => {
-      if (i < 5) {
-        const githubMainRepos = document.querySelector(".github-main-repos");
-        githubMainRepos.innerHTML += `<span><a href="${repo.html_url}">${repo.name}</a></span>`;
-      }
-    });
-  } catch (error) {
-    console.log(error);
-  }
 }
 
 function createErrorCard(msg) {
