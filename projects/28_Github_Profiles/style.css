@@ -57,6 +57,7 @@ input:focus-visible {
 .github-card img {
   max-width: 130px;
   border-radius: 50%;
+  border: 10px solid #2a2a72;
   align-self: flex-start;
 }
 
