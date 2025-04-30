@@ -5,9 +5,9 @@ const main = document.getElementById("main");
 const searchInput = document.getElementById("search-input");
 const githubCard = document.getElementById("github-card");
 
-const headers = {
-  Authorization: `token ${config.githubToken}`,
-};
+// const headers = {
+//   Authorization: `token ${config.githubToken}`,
+// };
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
