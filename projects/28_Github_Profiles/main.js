@@ -11,6 +11,7 @@ const githubCard = document.getElementById("github-card");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  loadingCard("Loading...");
   let searchInputValue = document.getElementById("search-input").value;
 
   getContent(searchInputValue);
@@ -27,6 +28,16 @@ const getContent = async (username) => {
 
     if (userResponse.status === 404) {
       return createErrorCard("No profile with this username!");
+    }
+    if (userResponse.status === 403) {
+      const rateLimitRemaining = userResponse.headers.get(
+        "X-RateLimit-Remaining"
+      );
+      console.log(rateLimitRemaining);
+
+      return createErrorCard(
+        "API rate limit exceeded. Please try again later."
+      );
     }
 
     const userData = await userResponse.json();
@@ -69,6 +80,12 @@ function renderFullContent(userData, reposData) {
   `;
 
   main.innerHTML = cardHTML;
+}
+
+function loadingCard(msg) {
+  const loadingHTML = `<h1 class="github-card">${msg}</h1>`;
+
+  main.innerHTML = loadingHTML;
 }
 
 function createErrorCard(msg) {
