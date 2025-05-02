@@ -6,8 +6,8 @@ generateJoke();
 jokeButton.addEventListener("click", generateJoke);
 
 async function generateJoke() {
-	jokeButton.disabled = true;
-	jokeButton.textContent = "Loading...";
+  jokeButton.disabled = true;
+  jokeButton.textContent = "Loading...";
 
   const config = {
     headers: {
@@ -20,13 +20,13 @@ async function generateJoke() {
     const data = await response.json();
 
     displayJoke(data.joke);
-	} catch (err) {
-		displayJoke("Failed to fetch a joke. Please try again.")
+  } catch (err) {
+    displayJoke("Failed to fetch a joke. Please try again.");
     console.error("Error:", err);
-	} finally {
-		jokeButton.disabled = false;
-		jokeButton.textContent = "Get Another Joke";
-	}
+  } finally {
+    jokeButton.disabled = false;
+    jokeButton.textContent = "Get Another Joke";
+  }
 }
 
 function displayJoke(joke) {
